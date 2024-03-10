@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy Mahlangu's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+      <a class="navbar-brand" href="#">HappyM</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron" id="Home">
+  <div class="container text-center">
+    <h1>Hello! My name is Happy Mahlangu <br>a Software Developer.</h1>      
+    <p>I'm a front-end software developer dedicated to crafting intuitive and visually stunning web experiences.</p>
+  </div>
+</div>
+
+<div class="about-container" id="About">
+  <p class="about-title">About Me</p>
+  <p class="about-description">Hello! I’m Happy Mahlangu, a passionate software developer with a knack for crafting user-friendly solutions. My expertise lies in front-end development, where I use my strong problem-solving skills and attention to detail to create engaging and intuitive user interfaces.
+
+    What sets me apart is my commitment to building real-world projects. This hands-on experience has not only honed my coding skills but also given me a deep understanding of the full project lifecycle, from initial concept to final deployment.
+    
+    Looking ahead, my career goal is to continue growing as a developer, taking on new challenges, and contributing to meaningful projects that make a difference in people’s lives. I’m excited about the opportunity to bring my unique blend of skills and experience to a dynamic and innovative team.</p>
+</div>
+
+<div class="skills-container">
+  <p class="skills-title">Here are my skills</p>
+    <div class="skill-icon-container">
+      <div>
+      <img src="Images/js.png" class="skill-icon" alt="">
+    </div>
+    <div>
+      <img src="Images/html.png" class="skill-icon" alt="">
+    </div>
+    <div>
+      <img src="Images/css-3.png" class="skill-icon" alt="">
+    </div>
+    <div>
+      <img src="Images/git.png" class="skill-icon" alt="">
+    </div>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center" id="Projects">    
+  <h2 class="projects-title">Some of my Work</h2><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p class="project-name">Shopping Cart</p>
+      <a href="Other Projects/Shopping Cart/shopStart.html" target="_blank"><img src="images/shopping-cart-picture.webp" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p class="project-name">Animated Robot</p>
+      <a href="../chapter7/chapter7.html" target="_blank"><img src="images/animated-robot-picture.webp" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3"> 
+      <p class="project-name">Rock Paper Scissors</p>
+      <a href="Other Projects/Rock Paper Scissor/Exersise 12r.html" target="_blank"><img src="images/rock-paper-scissors-picture.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3">
+      <p class="project-name">Todo List</p>
+      <a href="Other Projects/Todo List/11x.html" target="_blank"><img src="images/todo-list-picture.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center second-project-row">    
+  <div class="row">
+    <div class="col-sm-3 project">
+      <p class="project-name">Calculator</p>
+      <a href="Other Projects/Calculator/10-calculator.html" target="_blank">
+        <img src="images/calculator-picture.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </a>
+    </div>
+    <div class="col-sm-3"> 
+      <p class="project-name">Hangman Game</p>
+      <a href="../hangman-game/hangman.html" target="_blank">
+        <img src="images/hang-man-picture.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </a>
+    </div>
+    <div class="col-sm-3"> 
+      <p class="project-name">Number Guessing</p>
+      <a href="Other Projects/Number Guessing Game/index.html" target="_blank">
+        <img src="images/number-guessing-picture.png" class="img-responsive" style="width:100%" alt="Image">
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <p class="project-name">Stop watch</p>
+      <a href="Other Projects/Stopwatch/1-stop-watch-app.html" target="_blank">
+        <img src="images/stop-watch picture.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </a>
+    </div>
+  </div>
+</div><br><br>
+
+
+<form action="https://formspree.io/f/myyrjonk" method="POST" class="form" id="Contact">
+  <p class="form-title">Let's keep in touch!</p>
+  <label class="form-label">
+    Your email:
+    <input type="email" name="email" class="email-input">
+  </label>
+  <label class="form-label">
+    Your message:
+    <input type="message" name="message" class="message-input">
+  </label>
+  <button type="submit" class="send-form-button">Send</button>
+</form>
+
+<footer class="footer-container">
+  <div class="left-side">
+    <div class="address"></div>
+    <div class="phone-numbers"></div>
+    <div class="email"></div>
+  </div>
+  
+  <div class="right-side">
+    <div class="left-side-title"></div>
+    <div class="left-side-content"></div>
+    <div class="social-media-icons">
+      <div class="git-hub"></div>
+      <div class="linked-in"></div>
+      <div class="whats-app"></div>
+    </div>
+  </div>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>

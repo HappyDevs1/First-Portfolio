@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stop watch app</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+      .title {
+        font-size: 30px;
+        display: flex;
+        font-weight: bolder;
+
+      }
+      .start-button,
+      .stop-button,
+      .reset-button {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: darkgrey;
+        color: black;
+      }
+      .counter-displayer {
+        font-size: 30px;
+        margin-left: 100px;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <P class="title">Stop Watch App</P>
+    <button class="start-button js-start-button">Start</button>
+    <button class="stop-button js-stop-button">Stop</button>
+    <button class="reset-button js-reset-button">Reset</button>
+    <p class="counter-displayer js-counter-displayer"></p>
+    <script>
+      document.querySelector('.js-counter-displayer')
+       .innerHTML = `
+       <p class="counting-text">0</p>
+       `
+
+      let num = 0;
+      let intervalId;
+      let isCounting = false;
+       function startCounting () {
+        clearTimeout(intervalId)
+        if (isCounting === false) {
+        intervalId = setInterval(() => {
+          num++;
+          document.querySelector('.js-counter-displayer')
+          .innerHTML = num;
+        }, 1000)
+       }
+      }
+
+       function stopCounting () {
+        clearInterval(intervalId)
+       }
+
+       function resetCounter () {
+        if (isCounting === false) {
+        clearInterval(intervalId);
+        num = 0;
+       }
+       }
+
+       document.querySelector('.js-start-button')
+        .addEventListener('click', () => {
+          startCounting()
+        })
+
+        document.querySelector('.js-stop-button')
+         .addEventListener('click', () => {
+          stopCounting()
+         })
+       document.querySelector('.js-reset-button')
+        .addEventListener('click', () => {
+          resetCounter()
+          document.querySelector('.js-counter-displayer')
+          .innerHTML = '0'
+          return num;
+        })
+    </script>
+  </body>
+</html>

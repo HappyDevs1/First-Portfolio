@@ -1,0 +1,130 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: rgb(100, 100, 100);
+}
+.navbar-nav {
+  color: blue;
+}
+body {
+  background-image: url(Images/Background\ image\ 2.jpg);
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.jumbotron {
+  background-image: url(Images/Banner\ 1.jpg);
+}
+.about-container {
+  box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 1vw;
+  padding: 3vw 2vw;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  right: 20%;
+  left: 20%;
+  margin: 3%;
+}
+.about-title {
+  font-size: clamp(2rem, 4vw, 9rem);
+  font-weight: bold;
+}
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.skills-title {
+  font-size: clamp(2rem, 4vw, 9rem);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.skill-icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+.skill-icon-container > div {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  position: relative;
+  left: 10%;
+  right: 10%;
+}
+.skill-icon {
+  max-width: 20%;
+  height: auto;
+}
+.projects-title {
+  font-size: clamp(2rem, 4vw, 9rem);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.project-name {
+  color: black;
+  font-weight: bold;
+}
+.second-project-row {
+  margin-bottom: 10rem;
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.email-input,
+.message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.send-form-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.send-form-button:hover {
+  background-color: #0056b3;
+}
+.footer-container {
+  background-color: lightgray;
+}
